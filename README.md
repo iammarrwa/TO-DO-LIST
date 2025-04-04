@@ -1,52 +1,35 @@
-# TO-DO-LIST
+# Mini-Bewerbung in Python 🇩🇪🐍
 
-aufgaben = []
+Dies ist ein einfaches Python-Projekt, das meine Bewerbung bei **U-Glow** unterstützt.
 
-def aufgabe_hinzufuegen(aufgabe):
-    aufgaben.append(aufgabe)
-    print(f"Aufgabe '{aufgabe}' wurde hinzugefügt.")
+## 👋 Über mich
 
-def aufgaben_anzeigen():
-    if not aufgaben:
-        print("Keine Aufgaben vorhanden.")
-    else:
-        print("Deine Aufgaben:")
-        for index, aufgabe in enumerate(aufgaben, start=1):
-            print(f"{index}. {aufgabe}")
+Ich bin Anfänger in Python, aber sehr motiviert zu lernen und praktische Erfahrung zu sammeln.  
+Dieses Projekt zeigt ein kleines Programm, das meine Fähigkeiten und Motivation darstellt.
 
-def aufgabe_entfernen(index):
-    if 0 < index <= len(aufgaben):
-        entfernte = aufgaben.pop(index - 1)
-        print(f"Aufgabe '{entfernte}' wurde entfernt.")
-    else:
-        print("Ungültiger Index.")
+## 🛠️ Verwendete Tools
 
-def hauptmenue():
-    while True:
-        print("\n--- Aufgabenverwaltung ---")
-        print("1. Aufgabe hinzufügen")
-        print("2. Aufgaben anzeigen")
-        print("3. Aufgabe entfernen")
-        print("4. Beenden")
-        wahl = input("Bitte wähle (1-4): ")
+- Programmiersprache: **Python 3**
+- Keine externen Bibliotheken – reines, einfaches Python
 
-        if wahl == "1":
-            aufgabe = input("Gib eine neue Aufgabe ein: ")
-            aufgabe_hinzufuegen(aufgabe)
-        elif wahl == "2":
-            aufgaben_anzeigen()
-        elif wahl == "3":
-            aufgaben_anzeigen()
-            try:
-                index = int(input("Welche Aufgabe soll entfernt werden (Nummer)? "))
-                aufgabe_entfernen(index)
-            except ValueError:
-                print("Bitte gib eine gültige Zahl ein.")
-        elif wahl == "4":
-            print("Auf Wiedersehen!")
-            break
-        else:
-            print("Ungültige Auswahl. Bitte nochmal.")
+## ▶️ Wie das Programm funktioniert
 
-# Starte das Programm
-hauptmenue()
+Das Programm zeigt:
+- Meinen Namen
+- Mein Berufsziel
+- Meine grundlegenden Fähigkeiten
+- Warum ich bei **U-Glow** arbeiten möchte
+
+## 📁 Dateiübersicht
+
+- `bewerbung.py` – Hauptprogramm
+- `README.md` – Diese Beschreibung
+
+## ✅ Warum dieses Projekt?
+
+Ich bin zwar noch am Anfang, aber ich möchte zeigen:
+- Ich kann mit Python arbeiten
+- Ich bin lernbereit und engagiert
+- Ich interessiere mich wirklich für die Stelle bei **U-Glow**
+
+Vielen Dank fürs Anschauen!
